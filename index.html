@@ -76,24 +76,16 @@
       >
         <div class="mb-10">
           <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-            <span
-              class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3"
-            >
-              <svg
-                class="w-4 h-4 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
-                />
+            <span class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
+              <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="8" />
               </svg>
             </span>
-            Technology Stack
+            Theme
           </h3>
           <div
             class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3"
-            id="techStackContainer"
+            id="themeContainer"
           ></div>
         </div>
 
@@ -120,33 +112,6 @@
             class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
             id="featuresContainer"
           ></div>
-        </div>
-
-        <div class="mb-10">
-          <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-            <span
-              class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3"
-            >
-              <svg
-                class="w-4 h-4 text-green-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-            Project Vision
-          </h3>
-          <textarea
-            id="customGoal"
-            placeholder="Describe your app's purpose, target audience, or the problem it should solve. For example: 'Help remote teams collaborate better' or 'Make learning languages more engaging for teenagers'"
-            class="w-full p-6 border-2 border-slate-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 resize-none transition-all duration-300 text-slate-700 placeholder-slate-400 bg-slate-50/50"
-            rows="4"
-          ></textarea>
         </div>
 
         <button
@@ -241,387 +206,33 @@
 
       <div class="text-center mt-16 text-slate-500">
         <p class="text-lg">
+          Made with <span class="text-red-500">❤️</span> by
+          <a
+            href="https://github.com/leecheeyong"
+            target="_blank"
+            class="text-gray-700 hover:underline font-semibold"
+          >
+            Chee Yong Lee
+          </a>
+        </p>
+        <p class="mt-1">
+          Project available as open source under the terms of
+          <a
+            href="https://github.com/leecheeyong/whatdo/blob/main/LICENSE"
+            target="_blank"
+            class="text-gray-700 hover:underline"
+          >MIT License</a>
+        </p>
+        <p class="mt-1">
           Powered by
           <a
             href="https://hackclub.com"
             class="text-blue-600 hover:text-blue-700 font-semibold transition-colors"
-            >Hack Club AI</a
-          >
+          >Hack Club AI</a>
         </p>
       </div>
     </div>
-
-    <script>
-      const techStackOptions = [
-        "React",
-        "Vue.js",
-        "Angular",
-        "Svelte",
-        "Next.js",
-        "Nuxt.js",
-        "SvelteKit",
-        "Node.js",
-        "Express",
-        "FastAPI",
-        "Django",
-        "Flask",
-        "Ruby on Rails",
-        "Laravel",
-        "Spring Boot",
-        "Firebase",
-        "Supabase",
-        "AWS",
-        "Vercel",
-        "Netlify",
-        "Railway",
-        "MongoDB",
-        "PostgreSQL",
-        "MySQL",
-        "Redis",
-        "Prisma",
-        "Drizzle",
-        "Tailwind CSS",
-        "Bootstrap",
-        "Material-UI",
-        "Chakra UI",
-        "Ant Design",
-        "Mantine",
-        "React Native",
-        "Flutter",
-        "Ionic",
-        "Expo",
-        "Electron",
-        "Tauri",
-        "TypeScript",
-        "Python",
-        "Go",
-        "Rust",
-        "Java",
-        "C#",
-      ];
-
-      const featuresOptions = [
-        "User Authentication",
-        "Real-time Chat",
-        "Push Notifications",
-        "File Upload & Storage",
-        "Payment Processing",
-        "Social Media Integration",
-        "Email Automation",
-        "Maps & Geolocation",
-        "Data Visualization",
-        "Advanced Search",
-        "User Profiles & Settings",
-        "Admin Dashboard",
-        "REST API",
-        "GraphQL API",
-        "Offline Support",
-        "Multi-language Support",
-        "Video/Audio Calls",
-        "Calendar Integration",
-        "Analytics & Reporting",
-        "Data Export/Import",
-        "Machine Learning",
-        "AI Integration",
-        "Blockchain Features",
-        "IoT Connectivity",
-        "Progressive Web App",
-        "Dark/Light Mode",
-        "Accessibility Features",
-        "SEO Optimization",
-        "Content Management",
-        "Subscription Management",
-        "Team Collaboration",
-        "Version Control",
-      ];
-
-      let selectedTechStack = [];
-      let selectedFeatures = [];
-
-      const techStackContainer = document.getElementById("techStackContainer");
-      const featuresContainer = document.getElementById("featuresContainer");
-      const generateBtn = document.getElementById("generateBtn");
-      const generateBtnText = document.getElementById("generateBtnText");
-      const loadingSpinner = document.getElementById("loadingSpinner");
-      const resultCard = document.getElementById("resultCard");
-      const aiResponse = document.getElementById("aiResponse");
-      const copyBtn = document.getElementById("copyBtn");
-      const generateAnotherBtn = document.getElementById("generateAnotherBtn");
-      const customGoal = document.getElementById("customGoal");
-
-      function init() {
-        populateTechStack();
-        populateFeatures();
-        setupEventListeners();
-      }
-
-      function populateTechStack() {
-        techStackOptions.forEach((tech) => {
-          const button = createSelectableButton(
-            tech,
-            () => toggleTechStack(tech),
-            "blue",
-          );
-          techStackContainer.appendChild(button);
-        });
-      }
-
-      function populateFeatures() {
-        featuresOptions.forEach((feature) => {
-          const button = createSelectableButton(
-            feature,
-            () => toggleFeature(feature),
-            "purple",
-          );
-          featuresContainer.appendChild(button);
-        });
-      }
-
-      function createSelectableButton(text, onClick, color) {
-        const button = document.createElement("button");
-        button.textContent = text;
-        button.className = `px-4 py-3 text-sm font-medium text-slate-600 bg-white border-2 border-slate-200 rounded-xl hover:border-${color}-300 hover:bg-${color}-50 transition-all duration-200 shadow-sm hover:shadow-md`;
-        button.onclick = onClick;
-        return button;
-      }
-
-      function toggleTechStack(tech) {
-        const button = event.target;
-        if (selectedTechStack.includes(tech)) {
-          selectedTechStack = selectedTechStack.filter((t) => t !== tech);
-          button.className =
-            "px-4 py-3 text-sm font-medium text-slate-600 bg-white border-2 border-slate-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 shadow-sm hover:shadow-md";
-        } else {
-          selectedTechStack.push(tech);
-          button.className =
-            "px-4 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 border-2 border-blue-600 rounded-xl shadow-md transform scale-105 transition-all duration-200";
-        }
-      }
-
-      function toggleFeature(feature) {
-        const button = event.target;
-        if (selectedFeatures.includes(feature)) {
-          selectedFeatures = selectedFeatures.filter((f) => f !== feature);
-          button.className =
-            "px-4 py-3 text-sm font-medium text-slate-600 bg-white border-2 border-slate-200 rounded-xl hover:border-purple-300 hover:bg-purple-50 transition-all duration-200 shadow-sm hover:shadow-md";
-        } else {
-          selectedFeatures.push(feature);
-          button.className =
-            "px-4 py-3 text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-purple-700 border-2 border-purple-600 rounded-xl shadow-md transform scale-105 transition-all duration-200";
-        }
-      }
-
-      function setupEventListeners() {
-        generateBtn.addEventListener("click", generateAppIdea);
-        generateAnotherBtn.addEventListener("click", generateAppIdea);
-        copyBtn.addEventListener("click", copyToClipboard);
-      }
-
-      async function generateAppIdea() {
-        if (selectedTechStack.length === 0) {
-          showNotification(
-            "Please select at least one technology from your tech stack.",
-            "warning",
-          );
-          return;
-        }
-
-        setLoadingState(true);
-        // Hide result card and error message while loading
-        resultCard.classList.add("hidden");
-        aiResponse.innerHTML = "";
-
-        try {
-          const prompt = buildPrompt();
-          const response = await callHackClubAI(prompt);
-          displayResponse(response);
-        } catch (error) {
-          console.error("Error generating app idea:", error);
-          displayError();
-        } finally {
-          setLoadingState(false);
-        }
-      }
-
-      function buildPrompt() {
-        let prompt = `Create a detailed and innovative app concept using these technologies: ${selectedTechStack.join(", ")}.`;
-
-        if (selectedFeatures.length > 0) {
-          prompt += ` The app should incorporate these key features: ${selectedFeatures.join(", ")}.`;
-        }
-
-        if (customGoal.value.trim()) {
-          prompt += ` Project vision and goals: ${customGoal.value.trim()}.`;
-        }
-
-        return prompt;
-      }
-
-      async function callHackClubAI(prompt) {
-        const response = await fetch(
-          "https://ai.hackclub.com/chat/completions",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              messages: [
-                {
-                  role: "system",
-                  content:
-                    "You are a fun tool that helps people come up with cool and creative project ideas. Please provide a comprehensive app concept including: 1. A catchy, memorable app name 2. Clear target audience and market positioning 3. Core value proposition and unique selling points 4. Detailed feature breakdown and user experience 5. Technical architecture overview 6. Monetization strategy 7. Potential challenges and solutions 8. Market opportunity and competitive advantages. Format the response with clear headings and make it engaging and professional.",
-                },
-                { role: "user", content: prompt },
-              ],
-            }),
-          },
-        );
-
-        if (!response.ok) {
-          throw new Error(`API request failed: ${response.status}`);
-        }
-
-        const data = await response.json();
-        let aiContent = data.choices[0].message.content;
-        if (aiContent.includes("</think>")) {
-          aiContent = aiContent.split("</think>")[1].trim();
-        }
-        aiContent = aiContent.replace(/<think>[\s\S]*?<\/think>/, "").trim();
-        return formatMarkdown(aiContent);
-      }
-
-      function formatMarkdown(text) {
-        text = text.replace(/### (.*?)(\n|$)/g, "<h3>$1</h3>");
-        text = text.replace(/## (.*?)(\n|$)/g, "<h2>$1</h2>");
-        text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-        text = text.replace(/\*(.*?)\*/g, "<em>$1</em>");
-        text = text.replace(/\n/g, "<br>");
-        return text;
-      }
-      function displayResponse(response) {
-        aiResponse.innerHTML = formatResponse(response);
-        resultCard.classList.remove("hidden");
-        resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-
-      function formatResponse(text) {
-        return text
-          .replace(
-            /\*\*(.*?)\*\*/g,
-            '<strong class="text-slate-800 font-bold">$1</strong>',
-          )
-          .replace(/\*(.*?)\*/g, '<em class="text-slate-700 italic">$1</em>')
-          .replace(
-            /#{3}\s*(.*?)$/gm,
-            '<h3 class="text-xl font-bold text-slate-800 mt-6 mb-3 border-b-2 border-blue-200 pb-2">$1</h3>',
-          )
-          .replace(
-            /#{2}\s*(.*?)$/gm,
-            '<h2 class="text-2xl font-bold text-slate-800 mt-8 mb-4 text-blue-700">$1</h2>',
-          )
-          .replace(
-            /#{1}\s*(.*?)$/gm,
-            '<h1 class="text-3xl font-bold text-slate-800 mt-8 mb-6 text-purple-700">$1</h1>',
-          )
-          .replace(
-            /^\d+\.\s*(.*?)$/gm,
-            '<div class="flex items-start mb-3"><span class="inline-flex items-center justify-center w-6 h-6 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full mr-3 mt-0.5 flex-shrink-0">•</span><span>$1</span></div>',
-          )
-          .replace(
-            /^-\s*(.*?)$/gm,
-            '<div class="flex items-start mb-2"><span class="text-purple-600 mr-3 mt-1">▸</span><span>$1</span></div>',
-          )
-          .replace(/\n\n/g, '</p><p class="mb-4">')
-          .replace(/\n/g, "<br>")
-          .replace(/^/, '<p class="mb-4">')
-          .replace(/$/, "</p>");
-      }
-
-      function displayError() {
-        aiResponse.innerHTML = `
-                    <div class="text-center py-8">
-                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-red-800 mb-2">Generation Failed</h3>
-                        <p class="text-red-600 mb-4">We encountered an issue while generating your app idea. Please try again.</p>
-                        <button onclick="generateAppIdea()" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                            Try Again
-                        </button>
-                    </div>
-                `;
-        resultCard.classList.remove("hidden");
-      }
-
-      function setLoadingState(isLoading) {
-        if (isLoading) {
-          generateBtn.disabled = true;
-          generateBtnText.classList.add("hidden");
-          loadingSpinner.classList.remove("hidden");
-        } else {
-          generateBtn.disabled = false;
-          generateBtnText.classList.remove("hidden");
-          loadingSpinner.classList.add("hidden");
-        }
-      }
-
-      async function copyToClipboard() {
-        try {
-          const textToCopy = aiResponse.textContent || aiResponse.innerText;
-          await navigator.clipboard.writeText(textToCopy);
-
-          const originalContent = copyBtn.innerHTML;
-          copyBtn.innerHTML = `
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                        </svg>
-                        <span class="ml-2">Copied!</span>
-                    `;
-          copyBtn.classList.remove(
-            "bg-slate-100",
-            "hover:bg-slate-200",
-            "text-slate-700",
-          );
-          copyBtn.classList.add("bg-green-100", "text-green-700");
-
-          setTimeout(() => {
-            copyBtn.innerHTML = originalContent;
-            copyBtn.classList.add(
-              "bg-slate-100",
-              "hover:bg-slate-200",
-              "text-slate-700",
-            );
-            copyBtn.classList.remove("bg-green-100", "text-green-700");
-          }, 2000);
-        } catch (err) {
-          console.error("Failed to copy text: ", err);
-          showNotification("Failed to copy to clipboard", "error");
-        }
-      }
-
-      function showNotification(message, type = "info") {
-        const notification = document.createElement("div");
-        const bgColor =
-          type === "warning"
-            ? "bg-yellow-500"
-            : type === "error"
-              ? "bg-red-500"
-              : "bg-blue-500";
-
-        notification.className = `fixed top-4 right-4 ${bgColor} text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-fade-in`;
-        notification.textContent = message;
-
-        document.body.appendChild(notification);
-
-        setTimeout(() => {
-          notification.remove();
-        }, 3000);
-      }
-
-      document.addEventListener("DOMContentLoaded", init);
-    </script>
+<script src=" https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js "></script>
+    <script src="/script.js"></script>
   </body>
 </html>
