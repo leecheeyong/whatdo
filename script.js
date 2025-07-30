@@ -138,10 +138,7 @@ function setupEventListeners() {
 
 async function generateAppIdea() {
   if (!selectedTheme) {
-    showNotification(
-      "Please select a theme for your app idea.",
-      "warning",
-    );
+    showNotification("Please select a theme for your app idea.", "warning");
     return;
   }
 
