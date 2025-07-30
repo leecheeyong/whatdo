@@ -166,7 +166,7 @@ function buildPrompt() {
   return prompt;
 }
 
-async function callHackClubAI(prompt, retries = 3) {
+async function callHackClubAI(prompt, retries = 5) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 60000);
   try {
